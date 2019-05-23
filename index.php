@@ -1,37 +1,32 @@
 <?php 
 
-// loops
+// comparisons booleans (true or false)
 
-$ninjas = ['shaun', 'ryu', 'yoshi'];
+// echo true; // '1' (truthy)
+// echo false; // '' (falsey)
 
-// for($i = 0; $i <count($ninjas); $i++){
-//     echo $ninjas[$i] . '<br/>';
-// }
+// numbers
+// echo 5 < 10; // '1'
+// echo 5 > 10; // ''
+// echo 5 == 10; // ''
+// echo 10 === 10; // '1'
+// echo 5 != 10; 
+// echo 5 <= 5;
+// echo 5 >= 5;
 
-// foreach($ninjas as $ninja){
-//     echo $ninja . '<br/>';
-// }
+// strings
+// echo 'shaun' < 'yoshi'; // '1' // compares aphabetic position of first letter
+// echo 'shaun' > 'yoshi'; // ''
+// echo 'shaun' > 'Shaun'; // '1' // uppercase letter is seen as less than lowercase letter
+// echo 'mario' == 'mario'; // '1'
+// echo 'mario' == 'Mario'; // ''
 
-$products = [
-		['name' => 'shiny star', 'price' => 20],
-		['name' => 'green shell', 'price' => 10],
-		['name' => 'red shell', 'price' => 15],
-		['name' => 'gold coin', 'price' => 5],
-		['name' => 'lightning bolt', 'price' => 40],
-		['name' => 'banana skin', 'price' => 2]
-];
-    
-// foreach($products as $product){
-//     echo $product['name'] . ' - ' . $product['price'] . '<br/>';
-// }
+// loose vs strict equal comparison
+// echo 5 == '5'; // '1'
+// echo 5 === '5'; // '' // not same data types
 
-// $i = 0;
-
-// while($i < count($products)) {
-//     echo $products[$i]['name'];
-//     echo '<br/>';
-//     $i++;
-// }
+// echo true == '1'; // '1'
+// echo false == ''; // '1'
 
 ?>
 
@@ -42,15 +37,7 @@ $products = [
 </head>
 <body>
     
-    <h1>Products</h1>
-    <ul>
-        <?php foreach($products as $product){ ?>
 
-            <h3><?php echo $product['name'];?></h3>
-            <p>$ <?php echo $product['price'];?></p>
-
-        <?php } ?>
-    </ul>
 
 </body>
 </html>
