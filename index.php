@@ -1,21 +1,44 @@
 <?php 
 
-    // functions
+    // variable scope
 
-    function sayHello($name = 'shaun', $time = 'morning'){
-        echo "good $time $name";
+    // local vars
+
+    function myFunc(){
+        $price = 10;
+        echo $price;
     }
+
+    // myFunc();
+    // echo $price;
+
+    function myFuncTwo($age){
+        echo $age;
+    }
+
+    // myFuncTwo(25);
+    // echo $age;
+
+    // global variables
+
+    $name = 'mario';
+
+    // function sayHello(){
+    //     global $name;
+    //     $name = 'yoshi';
+    //     echo "hello $name";
+    // }
 
     // sayHello();
-    sayHello('yoshi', 'night');
+    // echo $name;
 
-    function formatProduct($product){
-        // echo "{$product['name']} costs £{$product['price']} to buy <br />";
-        return "{$product['name']} costs £{$product['price']} to buy <br />";
+    function sayBye(&$name){
+        $name = 'wario';
+        echo "bye $name";
     }
 
-    // $formatted = formatProduct(['name' => 'gold star', 'price' => 20]);
-    // echo $formatted;
+    sayBye($name);
+    echo $name;
 
 ?>
 
