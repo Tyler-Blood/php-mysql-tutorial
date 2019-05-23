@@ -1,6 +1,13 @@
 <?php 
 
-    // echo 'hello, ninjas';
+    define('NAME', 'Yoshi');
+
+    // $name = "yoshi";
+    $age = 30;
+
+    // $name = 'Mario';
+    define('NAME', 'mario');
+
 
 ?>
 
@@ -10,11 +17,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>my first PHP file</title>
+    <title>PHP Tutorials</title>
 </head>
 <body>
     
-    <h1><?php echo 'hello, ninjas';?></h1>
+    <h1>User Profile Page</h1>
+
+    <div><?php echo NAME; ?></div>
+    <div><?php echo $age; ?></div>
 
 </body>
 </html>
