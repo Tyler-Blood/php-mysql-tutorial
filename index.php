@@ -1,38 +1,46 @@
 <?php 
 
-    $radius = 25;
-    // $pi = 3.14;
+// indexed arrays
 
-    // basic operators - *, /, +, -, **(exponent)
+$peopleOne = ['shaun', 'crystal', 'ryu'];
+// echo $peopleOne[1];
 
-    // echo $pi * $radius **2;
+$peopleTwo = array('ken', 'chun-li');
+// echo $peopleTwo[1];
 
-    // order of operations (PEMDAS)
+$ages = [20, 30, 40, 50];
+// print_r($ages);
 
-    // echo 2 * (4 + 9) / 3;
+$ages[1] = 25;
+// print_r($ages);
 
-    //increment(++) & decrement(--) operators
+$ages[] = 60;
+// print_r($ages);
 
-    // echo $radius--;
-    // echo $radius;
+array_push($ages, 70);
+// print_r($ages);
 
-    // shorthand operators
+// echo count($ages);
 
-    $age = 20;
+$peopleThree = array_merge($peopleOne, $peopleTwo);
+// print_r($peopleThree);
 
-    // $age = $age + 10;
-    // $age += 10;
-    // $age -= 10;
-    // $age *= 2;
-    // $age /=2;
-    // echo $age;
+// associative arrays (key value pairs)
 
-    // number functions
+$ninjasOne = ['shaun'=>'black', 'mario'=>'orange', 'luigi'=>'brown',];
+// echo $ninjasOne['mario'];
+// print_r($ninjasOne);
 
-    // echo floor($pi);
-    // echo ceil($pi);
-    echo pi();
+$ninjasTwo = array('bowser'=>'green', 'peach'=>'yellow');
+// print_r($ninjasTwo);
 
+$ninjasTwo['peach'] = 'pink';
+// print_r($ninjasTwo);
+
+// echo count($ninjasOne);
+
+$ninjasThree = array_merge($ninjasOne, $ninjasTwo);
+print_r($ninjasThree);
 
 ?>
 
