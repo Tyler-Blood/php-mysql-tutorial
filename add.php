@@ -33,6 +33,12 @@
                 $errors['ingredients'] = 'Ingredients must be a comma separated list';
             }
         }
+
+        if(!array_filter($errors)){
+            header('Location: index.php');
+        }
+
+
     } // end of post check
 
 ?>
