@@ -34,7 +34,9 @@
             }
         }
 
-        if(!array_filter($errors)){
+        if(array_filter($errors)){
+            // 
+        } else {
             header('Location: index.php');
         }
 
